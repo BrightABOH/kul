@@ -11,7 +11,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f0f0f0;
+            background-color: #000000;
             margin: 0;
             font-family: Arial, sans-serif;
         }
@@ -70,11 +70,11 @@
             margin: 5px 0;
         }
         .contact-info {
-            margin-top: 20px;
+            margin-top: 10px;
         }
         .info-item {
             font-size: 1em;
-            margin: 10px 0;
+            margin: 5px 0;
             display: flex;
             align-items: center;
         }
@@ -94,28 +94,6 @@
         }
 
         @media (max-width: 768px) {
-            .vcard {
-                flex-direction: column;
-                width: 100%;
-                max-width: 400px;
-            }
-            .vcard-left, .vcard-right {
-                width: 100%;
-                text-align: center;
-            }
-            .vcard-left {
-                padding: 10px;
-            }
-            .vcard-right {
-                padding: 10px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .vcard {
-                width: 100%;
-                max-width: 300px;
-            }
             .company-logo {
                 width: 60px;
                 height: 60px;
@@ -125,6 +103,31 @@
             }
             .person-title, .info-item {
                 font-size: 0.9em;
+            }
+            .vcard-right {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .vcard {
+                flex-direction: column;
+                width: 100%;
+                max-width: 300px;
+            }
+            .vcard-left, .vcard-right {
+                width: 100%;
+                text-align: center;
+            }
+            .company-logo {
+                width: 50px;
+                height: 50px;
+            }
+            .company-name, .person-name {
+                font-size: 1.2em;
+            }
+            .person-title, .info-item {
+                font-size: 0.8em;
             }
             .social-links a {
                 font-size: 1.2em;
@@ -151,7 +154,7 @@
                 <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
 
               <div class="download-link">
-                <a href="contact.vcf" download="KulKuhla.vcf">Download Contact</a>  
+                <a href="contact.vcf" download="KulKuhla.vcf">Add Contact</a>  
             </div>
         </div>
     </div>
