@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .vcard {
+            display: flex;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 600px;
+            height: 300px;
+            border: 1px solid #ddd;
+            background-size: cover;
+        }
+        .vcard-left {
+            background: #000;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            text-align: center;
+        }
+        .company-logo {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        .company-name {
+            font-size: 1.8em;
+            margin: 0;
+        }
+        .vcard-right {
+            padding: 20px;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .person-name {
+            font-size: 1.8em;
+            margin: 0;
+            color: #000;
+        }
+        .person-title {
+            font-size: 1.2em;
+            margin: 5px 0;
+            color: #555;
+        }
+        .person-description {
+            font-size: 1em;
+            color: #777;
+            margin: 5px 0;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .info-item {
+            font-size: 1em;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        .info-item i {
+            margin-right: 10px;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="vcard" id="vcard">
+        <div class="vcard-left">
+            <img src="IMG_4252.JPG" alt="Company Logo" class="company-logo">
+            <h1 class="company-name">The Living Word Ministry</h1>
+        </div>
+        <div class="vcard-right">
+            <h2 class="person-name">Kul Kuhla</h2>
+            <p class="person-title">Counselor</p>
+            <p class="person-description">Counsels Individuals, Couples, & Families of All Faith. Provides Spiritual Comfort and Support for All.</p>
+            <div class="contact-info">
+                <p class="info-item"><i class="fas fa-home"></i> The Living Word Ministry</p>
+                <p class="info-item"><i class="fas fa-envelope"></i> realkuul@yahoo.com</p>
+                <p class="info-item"><i class="fas fa-phone"></i> 3029836168</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
+
+              <div class="download-link">
+                <a href="contact.vcf" download="KulKuhla.vcf">Download Contact</a>  
+            </div>
+        </div>
+    </div>
+</body>
+</html>
