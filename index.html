@@ -17,14 +17,14 @@
         }
         .vcard {
             display: flex;
+            flex-direction: row;
             background: #fff;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             width: 600px;
-            height: 300px;
+            max-width: 100%;
             border: 1px solid #ddd;
-            background-size: cover;
         }
         .vcard-left {
             background: #000;
@@ -81,6 +81,54 @@
         .info-item i {
             margin-right: 10px;
             color: #000;
+        }
+        .social-links {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .social-links a {
+            color: #3b5998;
+            margin-right: 10px;
+            font-size: 1.5em;
+        }
+
+        @media (max-width: 768px) {
+            .vcard {
+                flex-direction: column;
+                width: 100%;
+                max-width: 400px;
+            }
+            .vcard-left, .vcard-right {
+                width: 100%;
+                text-align: center;
+            }
+            .vcard-left {
+                padding: 10px;
+            }
+            .vcard-right {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .vcard {
+                width: 100%;
+                max-width: 300px;
+            }
+            .company-logo {
+                width: 60px;
+                height: 60px;
+            }
+            .company-name, .person-name {
+                font-size: 1.5em;
+            }
+            .person-title, .info-item {
+                font-size: 0.9em;
+            }
+            .social-links a {
+                font-size: 1.2em;
+            }
         }
     </style>
 </head>
