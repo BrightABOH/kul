@@ -17,7 +17,7 @@
         }
         .vcard {
             display: flex;
-            flex-direction: row;
+            flex-wrap: wrap;
             background: #33D1FF;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -26,14 +26,16 @@
             max-width: 100%;
             border: 1px solid #ddd;
         }
-        .vcard-left {
-            background: #000;
-            color: #fff;
-            padding: 20px;
+        .vcard-left, .vcard-right {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding: 20px;
+        }
+        .vcard-left {
+            background: #000;
+            color: #fff;
             width: 40%;
             text-align: center;
         }
@@ -48,11 +50,8 @@
             margin: 0;
         }
         .vcard-right {
-            padding: 20px;
             width: 60%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            text-align: left;
         }
         .person-name {
             font-size: 1.8em;
@@ -91,6 +90,14 @@
             color: #3b5998;
             margin-right: 10px;
             font-size: 1.5em;
+        }
+        .download-link {
+            margin-top: 10px;
+        }
+        .download-link a {
+            color: #000;
+            text-decoration: none;
+            font-size: 1em;
         }
 
         @media (max-width: 768px) {
@@ -132,6 +139,9 @@
             .social-links a {
                 font-size: 1.2em;
             }
+            .vcard-left, .vcard-right {
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -152,9 +162,9 @@
             </div>
             <div class="social-links">
                 <a href="https://www.facebook.com/share/CVwtYf9nEmbkbwgE/?mibextid=LQQJ4d" target="_blank"><i class="fab fa-facebook"></i></a>
-
-              <div class="download-link">
-                <a href="contact.vcf" download="KulKuhla.vcf">Rev. Kul Kuhla</a>  
+            </div>
+            <div class="download-link">
+                <a href="contact.vcf" download="KulKuhla.vcf">Rev. Kul Kuhla</a>
             </div>
         </div>
     </div>
